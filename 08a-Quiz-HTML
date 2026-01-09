@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Joshua Paiement</title>
+
+    <style>
+        img {
+            width: 150px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ma page!</h1>
+
+    <ol>
+
+        <li>
+            <h2>Deux choses/objets que j'aime</h2>
+
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Lien</th>
+                    <th>Image</th>
+                </tr>
+
+                <tr>
+                    <td>Faire des recherches sur Internet</td>
+                    <td>
+                        <a href="https://www.google.com" target="_blank">Google</a>
+                    </td>
+                    <td>
+                        <img src="images/google.png" alt="Google">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Regarder des vidéos en ligne</td>
+                    <td>
+                        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                    </td>
+                    <td>
+                        <img src="images/youtube.png" alt="YouTube">
+                    </td>
+                </tr>
+            </table>
+        </li>
+
+        <li>
+            <h2>Des listes</h2>
+
+            <ul>
+                <li>
+                    Nourriture préférée
+                    <ol>
+                        <li>Fromage</li>
+                        <li>Brocoli</li>
+                        <li>Gâteaux</li>
+                    </ol>
+                </li>
+
+                <li>
+                    Couleurs préférées
+                    <ol>
+                        <li>Rouge</li>
+                        <li>Vert</li>
+                        <li>Jaune</li>
+                        <li>Bleu</li>
+                    </ol>
+                </li>
+
+                <li>
+                    Saisons préférées
+                    <ol>
+                        <li>Hiver</li>
+                        <li>Printemps</li>
+                        <li>Été</li>
+                        <li>Automne</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Mon nom</h2>
+
+            <hr>
+            Joshua
+            <hr>
+            Paiement
+            <hr>
+        </li>
+
+    </ol>
+
+</body>
+</html>
