@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset= "UTF-8">
     <title>Joshua Paiement</title>
 
     <style>
@@ -14,12 +14,13 @@
             border-collapse: collapse;
             padding: 8px;
         }
-    </style>
+      <table=border="1"/>
+      </style>
 </head>
 
 <body>
 
-    <h1>Ma page!</h1>
+    <h2>Ma page!</h2>
 
     <ol>
 
