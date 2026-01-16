@@ -1,54 +1,92 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>
-			</title>
-			
-			<style>
-				* {
-				  margin: 0;
-				  padding: 0;
-				}
-				
-				#contenant {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-around;
-				}
-				.contenantItem { 
-					width: calc((100% / 5) - 10px);
-					height: 100px;
-					background-color: gray;
-					border-color: black; border-style: solid; border-width: 1px;
-					margin-bottom: 10px;
-				}
+<html>
+<head>
+	<title>Flexbox Media Queries</title>
 
-				@media only screen and (max-width: 800px) {
-					.contenantItem { width: calc((100% / 4) - 8px); }
-				}
-				@media only screen and (max-width: 650px) {
-					.contenantItem { width: calc((100% / 3) - 6px); }
-				}
-				@media only screen and (max-width: 400px) {
-					.contenantItem { width: calc((100% / 2) - 4px); }
-				}
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-			</style>
-		</head>
-		<body>
-			<h1>Flexbox avec media queries</h1>
-			<div id="contenant">			
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-				<div class="contenantItem"></div>
-			</div>
-		</body>
-	</html>
+		body {
+			background-color: gray; /* +1000px par défaut */
+		}
+
+		h1 {
+			text-align: center;
+			padding: 20px;
+		}
+
+		#contenant {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.contenantItem { 
+			width: calc((100% / 5) - 10px);
+			height: 100px;
+			background-color: white;
+			border: 1px solid black;
+			margin-bottom: 10px;
+		}
+
+		/* < 1000px */
+		@media only screen and (max-width: 1000px) {
+			body {
+				background-color: blue;
+			}
+		}
+
+		/* < 800px */
+		@media only screen and (max-width: 800px) {
+			body {
+				background-color: red;
+			}
+			.contenantItem {
+				width: calc((100% / 4) - 8px);
+			}
+		}
+
+		/* < 600px */
+		@media only screen and (max-width: 600px) {
+			body {
+				background-color: orange;
+			}
+			.contenantItem {
+				width: calc((100% / 3) - 6px);
+			}
+		}
+
+		/* < 400px */
+		@media only screen and (max-width: 400px) {
+			body {
+				background-color: green;
+			}
+			.contenantItem {
+				width: calc((100% / 2) - 4px);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Flexbox avec media queries</h1>
+
+	<div id="contenant">
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+		<div class="contenantItem"></div>
+	</div>
+</body>
+</html>
